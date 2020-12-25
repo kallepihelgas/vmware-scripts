@@ -1,3 +1,5 @@
+# Check ESXi firewall status and enable if not enabled.
+
 $esx_hosts = Get-VMHost -State Maintenance,Connected
 
 foreach ($esx_host in $esx_hosts) {

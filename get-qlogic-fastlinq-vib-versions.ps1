@@ -1,3 +1,5 @@
+# Display driver versions for QLogic FastLinQ QL41xxx Series 10/25 GbE Controller
+
 $esxihosts = Get-VMHost esxi1* | Sort-Object
 
 foreach ($esxi in $esxihosts) {

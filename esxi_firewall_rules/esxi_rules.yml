@@ -1,0 +1,20 @@
+---
+rules:
+- name: SSH access for ESXI - TCP/22
+  servicename: sshServer
+  allowedip:
+    - 1.1.1.10 # Terminal #1
+    - 2.2.2.20 # Terminal #2
+    - 3.3.3.0/24 # Admin lan
+- name: WebServer access - HTTP/80
+  servicename: webAccess
+  allowedip:
+    - 1.1.1.10 # Terminal #1
+    - 2.2.2.20 # Terminal #2
+    - 3.3.3.0/24 # Admin lan
+- name: vSphereClient - TCP/443,TCP/902
+  servicename: vSphereClient
+  allowedip:
+    - 1.1.1.10 # Terminal #1
+    - 2.2.2.20 # Terminal #2
+    - 3.3.3.0/24 # Admin lan
